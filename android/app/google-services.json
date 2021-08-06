@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "828801508003",
+    "project_id": "multiple-login-fa3e4",
+    "storage_bucket": "multiple-login-fa3e4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:828801508003:android:c626cf5ac1130b4ce31516",
+        "android_client_info": {
+          "package_name": "com.example.multiple_login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "828801508003-5lous4qbvus6a9bqnl0gmfmnsur720rb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAszbqRavSZe2or5iuFnjRHyG1Xu89FiM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "828801508003-5lous4qbvus6a9bqnl0gmfmnsur720rb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
