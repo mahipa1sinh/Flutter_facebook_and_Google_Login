@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:multiple_login/components/logged_in_widget.dart';
+import 'package:multiple_login/components/google_logged_in_widget.dart';
 import 'package:multiple_login/pages/login_page.dart';
 
 class HomePage extends StatelessWidget {
@@ -17,7 +17,6 @@ class HomePage extends StatelessWidget {
             print('Processing..');
             return Center(child: CircularProgressIndicator());
           } else if (snapshot.hasData) {
-            // Object navigate = Navigator.pushNamed(context, 'Loggedin');
             return LoggedInWidget();
           } else if (snapshot.hasError) {
             print('Error!!!');

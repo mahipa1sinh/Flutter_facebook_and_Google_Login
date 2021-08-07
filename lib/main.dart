@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:multiple_login/components/logged_in_widget.dart';
+import 'package:multiple_login/bloc/auth_bloc.dart';
+import 'package:multiple_login/components/google_logged_in_widget.dart';
 import 'package:multiple_login/pages/login_page.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:multiple_login/provider/google_signin_provider.dart';
@@ -17,8 +18,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
-      create: (context) => GoogleSigninProvider(),
+    // return ChangeNotifierProvider(
+    //   create: (context) {
+    //     GoogleSigninProvider();
+    //     AuthBloc();
+    //   },
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (context) => GoogleSigninProvider()),
+        Provider(create: (context) => AuthBloc())
+      ],
       child: MaterialApp(
         theme: ThemeData(
           primaryColor: Color(0xFF141221), // vulcan color
