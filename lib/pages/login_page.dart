@@ -48,6 +48,7 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     var authBloc = Provider.of<AuthBloc>(context);
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       backgroundColor: Color(0xFF141221),
       body: Container(
         height: MediaQuery.of(context).size.height,
